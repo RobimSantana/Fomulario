@@ -1,15 +1,16 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Navbar } from './_components/navbar/navbar';
-//import { Certificados } from './pages/certificados/certificados';
-import { CertificadoForm } from './pages/certificado-form/certificado-form';
+import { Certificado } from './pages/certificado/certificado';
 
 import { BaseUi } from './_components/base-ui/base-ui';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Navbar , BaseUi, CertificadoForm],
+  imports: [RouterOutlet, Navbar , BaseUi, Certificado
+
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
