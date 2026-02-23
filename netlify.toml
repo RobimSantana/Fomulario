@@ -1,0 +1,9 @@
+[build]
+comand = "ng build --configuration=production"
+piblish = "dist/gerador-certificado/browser"
+
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
