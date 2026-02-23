@@ -1,6 +1,6 @@
 [build]
 comand = "ng build --configuration=production"
-piblish = "dist/gerador-certificado/browser"
+publish = "dist/gerador-certificado/browser"
 
 
 [[redirects]]
