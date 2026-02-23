@@ -1,0 +1,31 @@
+.navbar {
+    background-color: #ffff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e2e8f0;
+    padding-right: 28px;
+    padding-left: 12px;
+}
+
+.navbar-logo img {
+    height: 50px;
+}
+
+.active{
+    color: green;
+}
+
+.nav-link.active {
+    color: green;
+    font-weight: 600;
+}
+.navbar-nav{
+    align-items: center;
+}
+
+.nav-item{
+  cursor: pointer;
+}
+
+.nav-item i{
+  font-size: 20px;
+}

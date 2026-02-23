@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+
+    <a routerLink="/" class="navbar-logo">
+      <img src="certificate/logo.png" alt="logo">
+    </a>
+
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav">
+
+        <li class="nav-item d-flex align-items-center">
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            #rlaListaCertificado="routerLinkActive"
+            [routerLinkActiveOptions]="{exact: true}"
+            class="nav-link"
+          >
+            <i class="ph ph-medal"
+               [ngClass]="{'active': rlaListaCertificado.isActive}">
+            </i>
+            Lista de certificados
+          </a>
+        </li>
+
+        <li class="nav-item d-flex align-items-center">
+          <a
+            routerLink="/certificados/novo"
+            routerLinkActive="active"
+            #rlaGerarCertificado="routerLinkActive"
+            [routerLinkActiveOptions]="{exact: true}"
+            class="nav-link ms-3"
+          >
+            <i class="ph ph-circles-three-plus"
+               [ngClass]="{'active': rlaGerarCertificado.isActive}">
+            </i>
+                   Gerar certificado
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
